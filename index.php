@@ -1,68 +1,37 @@
 <?php
+//for loops
+$ninjas = ['shaun', 'ryu', 'yoshi'];
 
-$pi=3.14;
-$stringOne = 'my email is';
-$stringTwo = 'mario123@gmail.com';
-//echo 'hey, my name is' . $stringTwo;
+// for ($i = 0; $i < count($ninjas); $i++) {
+//     echo $ninjas[$i] . '<br/>';
+// };
 
-//echo floor($pi); 
-//echo ceil($pi);
+// foreach($ninjas as $ninja) {
+//     echo $ninja . '<br/>';
+// }
 
-//Arrays
-$peopleOne = ['shaun', 'cristal', 'ryy'];
-$name = 'shaun';
-//echo $peopleOne[1];
-
-$peopleTwo = array('ken', 'chun-li');
-//echo $peopleTwo[1];
-
-$ages = [20, 30, 40, 50];
-//print_r($ages);
-
-$ages[1] = 25;
-//print_r($ages)
-
-$ages[] = 60;
-//print_r($ages)
-
-array_push($ages, 70);
-//print_r($ages);
-
-//echo count($ages);
-
-//echo array_sum($ages);
-
-$peopleThree = array_merge($peopleOne, $peopleTwo);
-//print_r($peopleThree);
-
-//associative arrays (key & value pairs)
-
-$ninjasOne = ['shaun' => 'black', 'mario' => 'orange', 'luigi' => 'brown'];
-//echo $ninjasOne['mario'];
-
-
-$blogs = [
-    ['title' => 'mario party', 'author' => 'mario', 'content' => 'lorem', 'likes' => 30],
-    ['mario kart cheats', 'toad', 'lorem', 'likes' => 25],
-    ['zelda hidden chests', 'link', 'lorem', 'likes' => 50]
+$products = [
+    ['name' => 'shiny star', 'price' => 20],
+    ['name' => 'green shell', 'price' => 10],
+    ['name' => 'red shell', 'price' => 15],
+    ['name' => 'gold coin', 'price' => 5],
+    ['name' => 'lightning bolt', 'price' => 40],
+    ['name' => 'banana skin', 'price' => 2]
 ];
 
-$blogs[] = ['title' => 'castle party', 'author' => 'peach', 'content' => 'lorem', 'likes' => 100];
+// foreach($products as $product) {
+//     echo $product ['name'] . ' - ' . $product['price'] . '<br/>';
+// }
 
-print_r($blogs);
+
+//while loop
+
+$i = 0;
+
+while($i < count($products)) {
+    echo $products[$i]['name'];
+    echo '<br />';
+    $i++;
+}
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first php file</title>
-</head>
-
-<body>
-</body>
-
-</html>
