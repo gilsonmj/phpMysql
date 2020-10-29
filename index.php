@@ -26,7 +26,11 @@
         
         <input type="email" name="email" placeholder = "Digite o seu melhor e-mail">
         
-        <input type="submit" value="Cadastrar">
+        <input type="submit" value="Cadastrar"><br></br>
+
+
     </form>
+        <a href="list.php">Listar</a><br>
+
 </body>
 </html>
