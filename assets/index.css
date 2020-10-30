@@ -1,0 +1,65 @@
+.section-container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.text-orange {
+    color:#ec7e00 !important
+}
+
+label {
+    padding-left: 16px;
+    font-size: 18px;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.form-control {
+    border-radius: 48px;
+    height: 48px;
+    padding-left: 16px;
+    font-family: Roboto;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+}
+
+select.custom-select, input.form-control {
+    border-radius: 48px;
+    height: 48px;
+    padding-left: 16px;
+    font-family: Roboto;
+    background-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    width: 100%;
+}
+
+.types option {
+    padding-bottom: 1rem;
+}
+
+select {
+    overflow: auto;
+  }
+  
+  .panel-body {
+    padding: 0;
+  }
+
+button {
+    margin: 20px 0;
+    width: 200px !important;
+    width: fit-content;
+    background-color: #ec7e00;
+    padding: 0.8rem 2rem;
+    color: #fff;
+    border-radius: 4rem;
+    font-family: NunitoSemiBold;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    white-space: normal;
+}
