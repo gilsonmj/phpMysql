@@ -5,9 +5,12 @@
     $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
     $name = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    $adress = filter_input(INPUT_POST, 'adress', FILTER_SANITIZE_STRING);
+    $district = filter_input(INPUT_POST, 'district', FILTER_SANITIZE_STRING);
+    $telephone = filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_STRING);
     
 
-    $resultUsers = "UPDATE usuarios SET nome = '$name', email = '$email', modified=NOW() WHERE id='$id';";
+    $resultUsers = "UPDATE usuarios SET nome = '$name', email = '$email', adress = '$adress', district = '$district', telephone = '$telephone', modified=NOW() WHERE id='$id';";
     $resultadoUsuario = mysqli_query($conn, $resultUsers);
 
     if(mysqli_affected_rows($conn)) {

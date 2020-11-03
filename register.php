@@ -48,66 +48,19 @@ session_start();
                             <div class="form-row">
                                 <div class="col-sm-12 mb-4">
                                     <label class="text-orange"><b>Endereço*</b></label>
-                                    <input class="form-control adress" type="adress" id="candidateadress" name="endereco" required="" placeholder="Digite aqui">
-                                </div>
-                                <div class="col-5 mb-4">
-                                    <label class="text-orange"><b>Número*</b></label>
-                                    <input class="form-control Number" type="numbers" id="adNumber" name="numero" required="" placeholder="Digite aqui">
+                                    <input class="form-control adress" type="adress" id="adress" name="adress" required="" placeholder="Digite aqui">
                                 </div>
                                 <div class="col-7 mb-4">
                                     <label class="text-orange"><b>Bairro*</b></label>
-                                    <input class="form-control district" id="district" name="bairro" required="" placeholder="Digite aqui">
+                                    <input class="form-control district" id="district" name="district" required="" placeholder="Digite aqui">
                                 </div>
-                                <div class="col-sm-12 mb-4">
+                                <div class="col-sm-5 mb-4">
                                     <label class="text-orange"><b>Telefone*</b></label>
-                                    <input class="form-control cellphone_with_ddd validate valid" name="telefone" id="tel" type="tel" required="" placeholder="(xx) 00000-0000" minlength="10" maxlength="15" aria-invalid="false">
+                                    <input class="form-control" name="telephone" id="telephone" type="tel" required="" placeholder="(xx) 00000-0000" minlength="10" maxlength="15" aria-invalid="false">
                                 </div>
-                            </div>
-                            <div class="form-row mb-1" id="animalEspeciesInput">
-                                <div class="col-12 form-row mb-4">
-                                    <label class="text-orange"><b>Espécie?*</b></label>
-                                    <select class="custom-select especie" name="animalSpecies" id="animalSpecies" aria-invalid="false">
-                                        <option>Cão</option>
-                                        <option>Gato</option>
-                                        <option>Outro</option>
-                                    </select>
+                                <div class="col-sm-12 col-md-12" style="text-align: center;">
+                                    <button type="submit" value="Cadastrar">Cadastrar</button>
                                 </div>
-                                <div class="col-12 mb-1" style="display: none;" id="animalSpecies-input">
-                                    <label class="text-orange"><b>Especificar*</b></label>
-                                    <div class="form-row">
-                                        <textarea class="form-control" name="especifyAnimal" required=""></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-row mb-1" id="animal-Sex">
-                                <div class="col-12 form-row mb-4">
-                                    <label class="text-orange"><b>Sexo*</b></label>
-                                    <select class="custom-select sex" name="animalSex" id="animalSex" aria-invalid="false">
-                                        <option>Macho</option>
-                                        <option>Fêmea</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row mb-4">
-                                <div class="col-sm-12 col-md-12">
-                                    <label class="text-orange"><b>Cor*</b></label>
-                                    <input class="form-control animalColor" type="text" id="animalColor" name="color" minlength="4" required="" placeholder="Digite aqui">
-                                </div>
-                            </div>
-                            <div class="form-row mb-1" id="animal-Size">
-                                <div class="col-12 form-row mb-4">
-                                    <label class="text-orange"><b>Porte*</b></label>
-                                    <select class="custom-select size" name="animalSize" id="animalSize" aria-invalid="false">
-                                        <option>Pequeno</option>
-                                        <option>Pequeno/Médio</option<option>Médio</option>
-                                        <option>Médio/Grande</option>
-                                        <option>Grande</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-12" style="text-align: center;">
-                                <button type="submit" value="Cadastrar">Cadastrar</button>
-                            </div>  
                         </form>
                     </div>
                 </div>
