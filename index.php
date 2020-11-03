@@ -17,6 +17,8 @@ include_once("conection.php");
     <div class="container">
         <a href="register.php">Cadastrar</a><br>
         <a href="index.php">Listar</a><br>
+        <a href="search.php">Pesquisar</a><br>
+
         <h1>Listar Usuário</h1>
 
         <?php
@@ -43,7 +45,8 @@ include_once("conection.php");
             echo "Nome: " . $rowUser['nome'] . "<br>";
             echo "Email: " . $rowUser['email'] . "<br>";
             echo "<a href='editUser.php?id=" . $rowUser['id'] . "'>Editar</a><br>";
-            echo "<a href='processDeleteUser.php?id=" . $rowUser['id'] . "' data-confirm='Tem certeza que deseja excluir o item selecionado?'>Excluir</a><br> <hr>";
+            echo "<a href='deleteUser.php?id=" . $rowUser['id'] . "'>Apagar</a><br><hr>";
+
         }
 
         //Paginação - Somar a quantidade de usuários
