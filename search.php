@@ -49,8 +49,10 @@ include_once("conection.php");
                                 echo "ID: " . $rowUser['id'] . "<br>";
                                 echo "Nome: " . $rowUser['nome'] . "<br>";
                                 echo "E-mail: " . $rowUser['email'] . "<br>";
+                                echo "Endereço: " . $rowUser['adress'] .", ". $rowUser['district'] . "<br>";
+                                echo "Telefone: " . $rowUser['telephone'] . "<br>";
                                 echo "<a href='editUser.php?id=" . $rowUser['id'] . "'>Editar</a><br>";
-                                echo "<a href='deleteUser.php?id=" . $rowUser['id'] . "'>Apagar</a><br>";
+                                echo "<a href='deleteUser.php?id=" . $rowUser['id'] . "'>Apagar</a><br><hr>";
 
                             };
                         }

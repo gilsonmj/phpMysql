@@ -44,9 +44,16 @@ include_once("conection.php");
             echo "ID: " . $rowUser['id'] . "<br>";
             echo "Nome: " . $rowUser['nome'] . "<br>";
             echo "Email: " . $rowUser['email'] . "<br>";
+            echo "Endereço: " . $rowUser['adress'] .", ". $rowUser['district'] . "<br>";
+            echo "Telefone: " . $rowUser['telephone'] . "<br>";
+            echo "Espécie do Animal: " . $rowUser['animalSpecies'] . "<br>";
+            echo "Residência denunciada por maus tratos por: " . $rowUser['complaint'] . "<br>";
+            echo "Comentários: " . $rowUser['comments'] . "<br>";
+            echo "Providências que devem ser tomadas pelo tutor: " . $rowUser['tutoraction'] . "<br>";
+            echo "Providências a serem tomadas pela organização:  " . $rowUser['gavasaction'] . "<br>";
+
             echo "<a href='editUser.php?id=" . $rowUser['id'] . "'>Editar</a><br>";
             echo "<a href='deleteUser.php?id=" . $rowUser['id'] . "'>Apagar</a><br><hr>";
-
         }
 
         //Paginação - Somar a quantidade de usuários

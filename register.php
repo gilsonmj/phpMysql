@@ -58,12 +58,142 @@ session_start();
                                     <label class="text-orange"><b>Telefone*</b></label>
                                     <input class="form-control" name="telephone" id="telephone" type="tel" required="" placeholder="(xx) 00000-0000" minlength="10" maxlength="15" aria-invalid="false">
                                 </div>
-                                <div class="col-sm-12 col-md-12" style="text-align: center;">
-                                    <button type="submit" value="Cadastrar">Cadastrar</button>
+                            </div>
+                            <div class="form-row mb-1" id="animalEspeciesInput">
+                                <div class="col-12 form-row mb-4">
+                                    <label class="text-orange"><b>Espécie?*</b></label>
+                                    <select class="custom-select especie" name="animalSpecies" id="animalSpecies" aria-invalid="false">
+                                        <option>Cão</option>
+                                        <option>Gato</option>
+                                        <option>Outro</option>
+                                    </select>
                                 </div>
-                        </form>
+                            </div>
+                            <div class="formcomplaint">
+                                <label class="text-orange"><b>Observações*</b></label>
+                                <div class="form-check">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="complaint[]" value="Animal doente ou acidentado sem assistência veterinária" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                        Animal doente ou acidentado sem assistência veterinária
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Animal amarrado ou acorrentado permanentemente" name="complaint[]" id="defaultCheck2">
+                                        <label class="form-check-label" for="defaultCheck2">
+                                        Animal amarrado ou acorrentado permanentemente
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Animal preso em espaço inadequado" name="complaint[]" id="defaultCheck3">
+                                        <label class="form-check-label" for="defaultCheck3">
+                                        Animal preso em espaço inadequado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sem comida 
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sem água ou com água suja                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal exposto a sol/vento/chuva sem local para se proteger
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sendo espancado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal apanhando
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sendo queimado
+                                        </label>
+                                    </div><div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sendo enforcado
+                                        </label>
+                                    </div><div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sendo chutado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sendo socado
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal permanentemente na rua
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal com pulgas/carrapatos/piolhos
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="other" name="complaint[]" id="defaultCheck4">
+                                        <label class="form-check-label" for="defaultCheck4">
+                                        Animal sem assistência por vários dias
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row mb-4 mt-5">
+                                <div class="col-sm-12 col-md-12">
+                                    <label class="text-orange"><b>Observações durante a visita*</b></label>
+                                    <input class="form-control" type="text" id="name" name="comments" required="" placeholder="Digite aqui">
+                                </div>
+                            </div>
+                            <div class="form-row mb-1" id="freeanimal">
+                                <div class="col-12 form-row">
+                                    <label class="text-orange"><b>Tutor quer manter o animal?*</b></label>
+                                    <select class="custom-select especie" name="freeanimal" id="freeanimal" aria-invalid="false">
+                                        <option>Sim</option>
+                                        <option>Não</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row mb-4 mt-2">
+                                <div class="col-sm-12 col-md-12">
+                                    <label class="text-orange"><b>Providências que devem ser tomadas pelo tutor:*</b></label>
+                                    <input class="form-control" type="text" id="tutoraction" name="tutoraction" required="" placeholder="Digite aqui">
+                                </div>
+                            </div>
+                            <div class="form-row mb-4 mt-5">
+                                <div class="col-sm-12 col-md-12">
+                                    <label class="text-orange"><b>Providências a serem tomadas pela organização:*</b></label>
+                                    <input class="form-control" type="text" id="gavasaction" name="gavasaction" required="" placeholder="Digite aqui">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12" style="text-align: center;">
+                                <button type="submit" value="Cadastrar">Cadastrar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </form>
     </section>

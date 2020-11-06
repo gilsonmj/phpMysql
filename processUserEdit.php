@@ -8,9 +8,11 @@
     $adress = filter_input(INPUT_POST, 'adress', FILTER_SANITIZE_STRING);
     $district = filter_input(INPUT_POST, 'district', FILTER_SANITIZE_STRING);
     $telephone = filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_STRING);
+    $animalSpecies = filter_input(INPUT_POST, 'animalSpecies', FILTER_SANITIZE_STRING);
+
     
 
-    $resultUsers = "UPDATE usuarios SET nome = '$name', email = '$email', adress = '$adress', district = '$district', telephone = '$telephone', modified=NOW() WHERE id='$id';";
+    $resultUsers = "UPDATE usuarios SET nome = '$name', email = '$email', adress = '$adress', district = '$district', telephone = '$telephone', animalSpecies = '$animalSpecies', modified=NOW() WHERE id='$id';";
     $resultadoUsuario = mysqli_query($conn, $resultUsers);
 
     if(mysqli_affected_rows($conn)) {

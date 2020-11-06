@@ -1,16 +1,31 @@
-$(function(){
-    $("#animalSpecies").change(function(){
-        if($(this).val() == 'Outro')
-            $('#animalSpecies-input').show();
-        else
-            $('#animalSpecies-input').hide();
-    });
+
+$('body').on("click", ".dropdown-menu", function (e) {
+    $(this).parent().is(".open") && e.stopPropagation();
 });
 
-$('select').selectpicker();
+$('.selectall').click(function() {
+    if ($(this).is(':checked')) {
+        $('.option').prop('checked', true);
+        var total = $('input[name="options[]"]:checked').length;
+        $(".dropdown-text").html('(' + total + ') Selected');
+        $(".select-text").html(' Deselect');
+    } else {
+        $('.option').prop('checked', false);
+        $(".dropdown-text").html('(0) Selected');
+        $(".select-text").html(' Select');
+    }
+});
 
-$(document).ready(function() {
-    $('#multiple-checkboxes').multiselect({
-      includeSelectAllOption: true,
-    });
+$("input[type='checkbox'].justone").change(function(){
+    var a = $("input[type='checkbox'].justone");
+    if(a.length == a.filter(":checked").length){
+        $('.selectall').prop('checked', true);
+        $(".select-text").html(' Deselect');
+    }
+    else {
+        $('.selectall').prop('checked', false);
+        $(".select-text").html(' Select');
+    }
+  var total = $('input[name="options[]"]:checked').length;
+  $(".dropdown-text").html('(' + total + ') Selected');
 });
